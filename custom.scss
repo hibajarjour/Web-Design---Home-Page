@@ -1,0 +1,222 @@
+//Declare a custom values up here 
+$body-bg:white;
+$body-font:white;
+$body-color: white;
+$blue-buildmart : #1f2b7b;
+$red-buildmart : #d82435;
+$red-shadow-buildmart : #db606d;
+$grey-title-buildmart : #606060;
+$grey-bg-buildmart : #e3e4e6;
+$price-title-buildmart : #a51220;
+$black:black;
+$footer-bg:#f7f7f7;
+$theme-colors: ("primary": #1f2b7b,
+    "danger": #d82435);
+
+$float-left:left;
+$float-right:right;
+$text-right:right;
+
+//Include all of Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+//Include all of Fontawesome
+@import "fontawesome/scss/fontawesome";
+@import "fontawesome/scss/solid";
+@import "fontawesome/scss/brands";
+@import "fontawesome/scss/regular";
+
+
+
+// Include Custom Bootstrap Style
+.navbar-top-buildmart {
+    background-color: $blue-buildmart !important;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.navbar-light .navbar-text,
+.nav-link {
+    color: $body-font;
+
+    &:hover {
+        color: $body-font;
+
+    }
+
+    &:focus {
+        color: $body-font;
+        font-weight: bold;
+    }
+}
+
+.right-position {
+    text-align: $text-right;
+}
+
+.carousel-indicators {
+    margin-bottom: 50px;
+
+}
+
+.carousel-caption {
+    text-align: unset !important;
+    bottom: 4rem;
+
+    button {
+        margin-top: 30px;
+    }
+}
+
+.carousel-indicators .active {
+    background-color: $red-buildmart !important;
+}
+
+.title-caption {
+    color: $grey-title-buildmart;
+}
+
+.carousel-inner {
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.inline-p {
+    p {
+        margin: 0;
+        line-height: 0.9;
+    }
+}
+
+.logo-txt {
+    p {
+        margin: 0;
+        line-height: 0.9;
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
+
+.bg-light {
+    background-color: $footer-bg;
+}
+
+.marketing {
+
+    p,
+    h5 {
+        color: $grey-title-buildmart;
+    }
+}
+
+.icon-btn-bd {
+    display: inline-flex;
+
+    i.active {
+        border: 1px solid $blue-buildmart;
+    }
+
+    .badge-red {
+        background-color: $red-buildmart;
+    }
+
+    .badge-blue {
+        background-color: $blue-buildmart;
+    }
+
+    .badge-new {
+        font-size: 18px;
+        color: white;
+        padding: 2px 8px;
+        vertical-align: top;
+
+        position: absolute;
+        border-radius: 2px;
+        margin-left: -20px;
+    }
+
+    span.new-line-txt {
+        display: block;
+    }
+
+    .me-6 {
+        margin-right: 3rem !important;
+    }
+}
+
+.chat-section {
+    position: relative;
+}
+
+.chat {
+    border-radius: 5px 0 0 5px;
+    background: $red-buildmart;
+    padding: 10px;
+    width: 100px;
+    right: 0;
+    color: $body-font;
+    position: relative;
+    text-align: left;
+    float: right;
+    display: block;
+    margin-bottom: 20px;
+    z-index:10;
+}
+
+.circle-icon-price {
+    background: $red-buildmart;
+    border-radius: 50%;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 5px $red-shadow-buildmart;
+
+}
+
+.txt-price-circle {
+    text-decoration: line-through;
+    color: $price-title-buildmart;
+    margin: 0;
+    padding: 0;
+}
+img.expand { width: 10em; }
+.txt-sale-price-circle {
+    padding: 0;
+    margin: 0;
+    color: $body-color;
+}
+
+footer {
+    a {
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .float-end {
+        float: none !important;
+    }
+
+    .chat-section {
+        
+       .container{ height: 50vh;
+        background-color: $grey-bg-buildmart;}
+    }
+
+    .after-separator-chat-bg {
+        bottom: 0% !important;
+
+        .circle-icon-price {
+            float: right;
+            margin: 10%;
+        }
+
+        .start-50 {
+            left: 100% !important;
+        }
+    }
+}
