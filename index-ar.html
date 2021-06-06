@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="rtl">
 
 <head>
     <title>BUILD MART</title>
@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="public/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/custom-rtl.css" />
     <link rel="stylesheet" type="text/css" href="public/css/stylesheet.css" />
 </head>
 
@@ -53,9 +54,9 @@
             <form class="d-flex col-lg-5  text-center">
 
                 <div class="input-group">
-                    <input class="form-control border-end-0 border" type="search" id="example-search-input" placeholder="Search for a product or a service...   ">
+                    <input class="form-control border-end-0 border" type="search" id="example-search-input" placeholder="Search for a product or a service...   " >
                     <span class="input-group-append">
-                        <button class="btn btn-outline-danger bg-white border-start-0 border-bottom-0 border ms-n5" type="button">
+                        <button class="btn btn-outline-danger bg-white border--0 border-top-0 border ms-n5" type="button">
                             <i class="fa fa-search"></i>
                         </button>
                     </span>
@@ -88,7 +89,7 @@
     </nav>
 
 
-    <div class="slider slick-slider">
+    <div class="slider slick-slider" style="direction: rtl">
         <div class="carousel-item active">
             <img class="img-fluid" src="/public/images/bg-grey.png" alt="">
             <div class="info d-none d-md-block">
@@ -156,10 +157,10 @@
         </div>
     </div>
 
-    <div class="container marketing">
+      <div class="container marketing">
         <!-- Three columns of text  -->
         <div class="row mb-4">
-            <div class="col-md-6 col-xs-12  mt-3">
+            <div class="col-md-6 col-xs-12 mt-3 ">
                 <div class="icon-btn-bd d-flex flex-row flex-wrap">
                     <span class="p-3 text-center disabled">
                         <a href="" class=" text-reset ">
@@ -227,6 +228,7 @@
 
     </div>
    
+    
     
     
     <section class="chat-section">
@@ -723,10 +725,10 @@
         <div class="container">
             <div class="row multi-title-slider">
 
-                <div class="col-md-6 col-xs-12">
+                <div class="col">
                     <h1 class="text-danger">Featured Products</h1>
                 </div>
-                <div class="col-md-6 col-xs-12 text-end more-product">
+                <div class="col text-end more-product">
                     <a class="text-primary " href="#">View all Featured products</a>
                 </div>
             </div>
@@ -1334,7 +1336,7 @@
                             Follow Us on
                         </h4>
 
-                        <div>
+                        <div class="follow-us-icon">
                             <a href="" class="me-4 text-reset">
                                 <i class="fab fa-facebook-f text-danger circle-icon "></i>
                             </a>

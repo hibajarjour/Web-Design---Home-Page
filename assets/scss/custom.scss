@@ -1,0 +1,458 @@
+//Declare a custom values up here 
+$body-bg:white;
+$body-font:white;
+$body-color: white;
+$blue-buildmart : #1f2b7b;
+$red-buildmart : #d82435;
+$red-shadow-buildmart : #db606d;
+$grey-title-buildmart : #606060;
+$grey-bg-buildmart : #e3e4e6;
+$price-title-buildmart : #a51220;
+$black:black;
+$footer-bg:#f7f7f7;
+$theme-colors: ("primary": #1f2b7b,
+    "danger": #d82435);
+
+$float-left:left;
+$float-right:right;
+$text-right:right;
+
+$tooltip-color: #606060;
+$tooltip-bg: #e3e4e6;
+$tooltip-font-size: 10px;
+//$tooltip-max-width:100px;
+
+//Include all of Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* path must be relative from the location of the compiled CSS file */
+$fa-font-path : "../../node_modules/@fortawesome/fontawesome-free/Webfonts";
+//Include all of Fontawesome
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss//v4-shims";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+
+.fab {
+    font-family: 'Font Awesome 5 Brands' !important;
+}
+
+
+// Include Custom Bootstrap Style
+.navbar-top-buildmart {
+    background-color: $blue-buildmart !important;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.navbar-light .navbar-text,
+.nav-link {
+    color: $body-font;
+
+    &:hover {
+        color: $body-font;
+
+    }
+
+    &:focus {
+        color: $body-font;
+        font-weight: bold;
+    }
+}
+
+.right-position {
+    text-align: $text-right;
+}
+
+//slick design
+.slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.carousel-caption {
+    p {
+        margin-bottom: 0rem;
+    }
+
+    button {
+        margin-top: 30px;
+    }
+}
+
+.carousel-indicators {
+    margin-bottom: 50px;
+
+}
+
+.carousel-caption {
+    text-align: unset !important;
+    bottom: 4rem;
+}
+
+.carousel-indicators .active {
+    background-color: $red-buildmart !important;
+}
+
+.slick-dots li button:before {
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 30px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li.slick-active button:before {
+
+    color: $red-buildmart !important;
+}
+
+.slick-dots li {
+    margin: 0px !important;
+}
+
+//end of slick design
+
+//start of multi slick design
+
+.multi-product-slider {
+    background-color: $grey-bg-buildmart;
+    margin: 40px 0px;
+
+    .card {
+        background-color: transparent;
+    }
+
+    .more-product {
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .circle-icon-border {
+        background: transparent;
+    }
+}
+
+.multi-item-slider {
+    padding-bottom: 30px;
+}
+
+.multi-title-slider {
+    padding: 20px 0 20px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: $blue-buildmart;
+}
+
+.slick-prev:before {
+    content: "\f0d9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.slick-next:before {
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+//end of multi slick design
+
+.title-caption {
+    color: $grey-title-buildmart;
+}
+
+.tooltip-inner {
+    color: $tooltip-color;
+
+    background-color: $tooltip-bg;
+    max-width: 100px;
+    font-size: $tooltip-font-size;
+}
+
+.inline-p {
+    p {
+        margin: 0;
+        line-height: 0.9;
+    }
+}
+
+.logo-txt {
+    p {
+        margin: 0;
+        line-height: 0.9;
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
+
+nav.bg-light {
+    background-color: $footer-bg;
+}
+
+.marketing {
+
+    p,
+    h5 {
+        color: $grey-title-buildmart;
+    }
+}
+
+.icon-btn-bd {
+//    display: inline-flex;
+
+    i.active {
+        border: 1px solid $blue-buildmart;
+    }
+
+    .badge-red {
+        background-color: $red-buildmart;
+    }
+
+    .badge-blue {
+        background-color: $blue-buildmart;
+    }
+
+    .badge-new {
+        font-size: 18px;
+        color: white;
+        padding: 2px 8px;
+        vertical-align: top;
+        position: absolute;
+        border-radius: 2px;
+        margin-left: -20px;
+    }
+
+    span.new-line-txt {
+        display: block;
+    }
+
+    .me-6 {
+        margin-right: 3rem !important;
+    }
+}
+
+.chat-section {
+    position: relative;
+}
+
+.chat {
+    border-radius: 5px 0 0 5px;
+    background: $red-buildmart;
+    padding: 10px;
+    width: 100px;
+    right: 0;
+    color: $body-font;
+    position: relative;
+    text-align: left;
+    float: right;
+    display: block;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.circle-icon-price {
+    background: $red-buildmart;
+    border-radius: 50%;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 5px $red-shadow-buildmart;
+
+}
+.rounded-img-why-section {
+    border-radius: 50% !important;
+   padding: 0rem;  
+    height: 150px;
+    width: 150px;
+}
+.txt-price-circle {
+    text-decoration: line-through;
+    color: $price-title-buildmart;
+    margin: 0;
+    padding: 0;
+}
+
+img.expand {
+    width: 10em;
+}
+
+.txt-sale-price-circle {
+    padding: 0;
+    margin: 0;
+    color: $body-color;
+}
+
+.service-wrap-btn {
+    width: 6rem;
+    font-size: 11px !important;
+    line-height: 1;
+}
+.input-group-append{
+    button:hover{
+        i{
+          color:  $blue-buildmart;
+        }
+    }
+}
+//start product details
+.marketing{
+ul {
+    .nav-item {
+        border-top: 1px solid $grey-bg-buildmart;
+        border-bottom: 1px solid $grey-bg-buildmart;
+
+        padding-right: calc(var(--bs-gutter-x) / 2);
+        padding-left: calc(var(--bs-gutter-x) / 2);
+        margin-top: var(--bs-gutter-y);
+    }
+
+    li {
+        .nav-link {
+            color: $blue-buildmart;
+            padding: 30px 10px;
+        }
+
+        .nav-link.active,
+        .nav-link:hover,
+        .nav-link:active {
+            color: $red-buildmart;
+        }
+    }
+}
+}
+.card {
+    border: 0px;
+}
+
+.badge-pill.badge-news {
+
+    background-color: $body-bg;
+    border: 1px solid $grey-bg-buildmart;
+    bottom: 20vh;
+    right: 3px;
+}
+
+.badge-pill {
+
+    position: absolute;
+    color: $red-buildmart;
+}
+
+.badge-heart {
+    top: 0;
+    right: 2px;
+}
+
+.view img {
+    position: relative;
+    display: block;
+}
+
+.view {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+.rating li {
+    display: inline-block;
+}
+
+
+.rating {
+
+    padding: 0;
+    color: #ffa000;
+    list-style-type: none;
+}
+
+
+
+//end product details
+
+//icon fa
+.circle-icon {
+    background: #dddddd;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.circle-icon-border {
+    border-radius: 50%;
+    background: white;
+    font-size: 16px !important;
+    font-weight: 600;
+    padding: 6px 0px;
+    border: 2px solid $red-buildmart;
+}
+
+.icon-btn-bd .disabled {
+    opacity: 0.6;
+}
+
+.circle-icon-fa {
+    background: #dddddd;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+//end of icon fa 
+.lang{
+    width: 40px;
+}
+footer {
+    a {
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .float-end {
+        float: none !important;
+    }
+
+    .chat-section {
+
+        .container {
+            height: 50vh;
+            background-color: $grey-bg-buildmart;
+        }
+    }
+
+    .after-separator-chat-bg {
+        bottom: 0% !important;
+
+        .circle-icon-price {
+            float: right;
+            margin: 10%;
+        }
+
+        .start-50 {
+            left: 100% !important;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+//Declare a custom values up here 
+$body-bg:white;
+$body-font:white;
+$body-color: white;
+$blue-buildmart : #1f2b7b;
+$red-buildmart : #d82435;
+$grey-title-buildmart : #606060;
+$black:black;
+$footer-bg:#f7f7f7;
+$theme-colors: ("primary": #1f2b7b,
+    "danger": #d82435);
+
+$float-left:left;
+$float-right:right;
+$text-left:left;
+$end-direction :left;
+$transform-direction :-1;
+
+.carousel-item,
+.data-col,
+.chat-section {
+    img {
+        transform: scaleX($transform-direction);
+    }
+}
+
+.slick-track {
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.separator-bg {
+    transform: scaleX($transform-direction);
+}
+
+.after-separator-bg {
+    transform: scaleX($transform-direction);
+    left: 0;
+    margin: 50px !important;
+}
+
+.right-position {
+    text-align: $text-left;
+}
+
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-right: -2px;
+    margin-left: 0px;
+
+    border-radius: 0px 0px 0px 0px; // top-left corner, top-right corner, bottom-right corner,bottom-left corner
+}
+
+.input-group-append {
+    border-radius: 0px 0px 0px 0px; // top-left corner, top-right corner, bottom-right corner,bottom-left corner
+}
+
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3) {
+    border-radius: 0px 5px 5px 0px;
+}
+
+section.bg-image {
+    transform: scaleX($transform-direction);
+
+    div.container {
+
+        transform: scaleX($transform-direction);
+        text-align: right;
+
+        .more-section a > i {
+            transform: scaleX($transform-direction);
+        }
+
+    }
+}
+
+.me-3 {
+    margin-left: 1rem !important;
+    margin-right: 0rem !important;
+}
+
+.me-4 {
+    margin-left: 1.5rem !important;
+    margin-right: 0rem !important;
+}
+
+.me-5 {
+    margin-left: 3rem !important;
+    margin-right: 0rem !important;
+}
+
+.icon-btn-bd .me-6 {
+    margin-left: 3rem !important;
+    margin-right: 0rem !important;
+}
+
+.float-end {
+    float: left !important;
+}
+
+footer { 
+
+    div.follow-us-icon {
+        float: right;
+    }
+
+    h4,
+    h6,
+    p {
+        text-align: right;
+    }
+}

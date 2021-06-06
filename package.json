@@ -4,12 +4,18 @@
   "description": "Home Page Design",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o public/css"
   },
   "author": "Hiba Jarjour",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.0.1",
-    "jquery": "^3.6.0"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.1", 
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.0"
   }
 }
